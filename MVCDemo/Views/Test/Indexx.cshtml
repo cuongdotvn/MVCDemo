@@ -1,0 +1,26 @@
+﻿
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+<div>
+    <h3>Thông tin người dùng</h3>
+    @{
+        var user = ViewBag.user;
+    }
+        @foreach (var u in user)
+         {
+             @u.name<br />
+             @u.address<br />
+             @u.email<br />
+             <br />
+         }
+    
+    Thông điệp:
+    <p>@ViewBag.Message</p>
+    Thời gian:
+    <p>@ViewBag.CurrentTime</p>
+</div>
+</body>
+</html>

@@ -8,6 +8,21 @@ namespace MVCDemo.Controllers
 {
     public class HomeController : Controller
     {
+        public bool IsVaild()
+        {
+            return true;
+        }
+
+        public string ContactUs()
+        {
+            return "Liên hệ với chúng tôi qua www.nanosoft.vn";
+        }
+
+        public ActionResult Registration()
+        {
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View();
